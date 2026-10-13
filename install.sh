@@ -9,6 +9,8 @@ case "$(uname -s)" in
     echo "==> macOS detected"
     echo "==> Applying macOS defaults"
     sh "$DOTFILES/macos/defaults.sh"
+    echo "==> Applying iTerm2 settings"
+    sh "$DOTFILES/macos/iterm.sh"
     ;;
   Linux)
     echo "==> Linux detected, nothing to do yet"

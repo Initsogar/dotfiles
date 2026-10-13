@@ -1,0 +1,269 @@
+{
+  "Profiles": [
+    {
+      "AWDS Pane Option": "No",
+      "AWDS Tab Option": "Recycle",
+      "AWDS Window Option": "No",
+      "Custom Directory": "Advanced",
+      "Custom Locale": "en_US.UTF-8",
+      "Draw Powerline Glyphs": true,
+      "Guid": "6E9E290F-9895-40D6-9C29-8877B7AE777C",
+      "Jobs to Ignore": [
+        "rlogin",
+        "ssh",
+        "slogin",
+        "telnet"
+      ],
+      "Keyboard Map": {
+        "0x2d-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1f",
+          "Version": 0
+        },
+        "0x32-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x00",
+          "Version": 0
+        },
+        "0x33-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1b",
+          "Version": 0
+        },
+        "0x34-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1c",
+          "Version": 0
+        },
+        "0x35-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1d",
+          "Version": 0
+        },
+        "0x36-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1e",
+          "Version": 0
+        },
+        "0x37-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x1f",
+          "Version": 0
+        },
+        "0x38-0x40000-0x0": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x7f",
+          "Version": 0
+        },
+        "0xf700-0x220000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2A",
+          "Version": 0
+        },
+        "0xf700-0x240000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5A",
+          "Version": 0
+        },
+        "0xf700-0x260000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;6A",
+          "Version": 0
+        },
+        "0xf700-0x280000-0x7e": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x01",
+          "Version": 1
+        },
+        "0xf701-0x220000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2B",
+          "Version": 0
+        },
+        "0xf701-0x240000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5B",
+          "Version": 0
+        },
+        "0xf701-0x260000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;6B",
+          "Version": 0
+        },
+        "0xf701-0x280000-0x7d": {
+          "Action": 11,
+          "Label": "",
+          "Text": "0x05",
+          "Version": 1
+        },
+        "0xf702-0x220000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2D",
+          "Version": 0
+        },
+        "0xf702-0x240000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5D",
+          "Version": 0
+        },
+        "0xf702-0x260000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;6D",
+          "Version": 0
+        },
+        "0xf702-0x280000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "b",
+          "Version": 0
+        },
+        "0xf703-0x220000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2C",
+          "Version": 0
+        },
+        "0xf703-0x240000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5C",
+          "Version": 0
+        },
+        "0xf703-0x260000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;6C",
+          "Version": 0
+        },
+        "0xf703-0x280000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "f",
+          "Version": 0
+        },
+        "0xf704-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2P",
+          "Version": 0
+        },
+        "0xf705-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2Q",
+          "Version": 0
+        },
+        "0xf706-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2R",
+          "Version": 0
+        },
+        "0xf707-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2S",
+          "Version": 0
+        },
+        "0xf708-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[15;2~",
+          "Version": 0
+        },
+        "0xf709-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[17;2~",
+          "Version": 0
+        },
+        "0xf70a-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[18;2~",
+          "Version": 0
+        },
+        "0xf70b-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[19;2~",
+          "Version": 0
+        },
+        "0xf70c-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[20;2~",
+          "Version": 0
+        },
+        "0xf70d-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[21;2~",
+          "Version": 0
+        },
+        "0xf70e-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[23;2~",
+          "Version": 0
+        },
+        "0xf70f-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[24;2~",
+          "Version": 0
+        },
+        "0xf729-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2H",
+          "Version": 0
+        },
+        "0xf729-0x40000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5H",
+          "Version": 0
+        },
+        "0xf72b-0x20000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;2F",
+          "Version": 0
+        },
+        "0xf72b-0x40000-0x0": {
+          "Action": 10,
+          "Label": "",
+          "Text": "[1;5F",
+          "Version": 0
+        }
+      },
+      "Minimum Contrast": 0,
+      "Name": "Dotfiles",
+      "Only The Default BG Color Uses Transparency": true,
+      "Prompt Before Closing 2": false,
+      "Scrollback Lines": 0,
+      "Set Local Environment Vars": 2,
+      "Terminal Type": "xterm-256color",
+      "Unlimited Scrollback": true
+    }
+  ]
+}

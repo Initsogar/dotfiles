@@ -16,3 +16,5 @@ cd ~/Workspace/dotfiles
 
 - `install.sh`: entry point
 - `macos/defaults.sh`: macOS settings (`defaults write ...`)
+- `macos/iterm.sh`: iTerm2 global settings, installs the profile
+- `macos/iterm/profile.json`: iTerm2 profile (scrollback, keys, new tab behavior) as a Dynamic Profile
