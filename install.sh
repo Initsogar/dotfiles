@@ -25,6 +25,17 @@ case "$(uname -s)" in
     if [ -n "$BREW" ]; then
       echo "==> Installing Homebrew packages"
       "$BREW" bundle --no-upgrade --file="$DOTFILES/Brewfile"
+
+      # Make Homebrew's bash the login shell (asks for your password once)
+      BASH_PATH="$(dirname "$BREW")/bash"
+      if [ -x "$BASH_PATH" ] && [ "$(dscl . -read "$HOME" UserShell | awk '{print $2}')" != "$BASH_PATH" ]; then
+        echo "==> Switching login shell to $BASH_PATH"
+        if grep -qx "$BASH_PATH" /etc/shells || echo "$BASH_PATH" | sudo tee -a /etc/shells >/dev/null; then
+          chsh -s "$BASH_PATH" || echo "    Could not change the shell, run: chsh -s $BASH_PATH"
+        else
+          echo "    Could not add $BASH_PATH to /etc/shells, skipping"
+        fi
+      fi
     else
       echo "==> Homebrew not found, skipping the Brewfile."
       echo "    Install it from https://brew.sh and run this script again."
