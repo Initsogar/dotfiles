@@ -1,0 +1,6 @@
+brew "bash"
+brew "bash-completion@2"
+cask "deskpad"
+brew "ffmpeg"
+brew "gh"
+brew "starship"

@@ -1,0 +1,2 @@
+# Login shells (every new terminal tab on macOS) read this file, not .bashrc.
+[ -r "$HOME/.bashrc" ] && . "$HOME/.bashrc"

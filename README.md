@@ -15,6 +15,8 @@ cd ~/Workspace/dotfiles
 ## Layout
 
 - `install.sh`: entry point
+- `Brewfile`: Homebrew packages, installed with `brew bundle`
+- `shell/bashrc`, `shell/bash_profile`: bash config, symlinked into `$HOME`. `shell/starship.toml` is the prompt, linked to `~/.config/starship.toml`. Machine-specific settings and secrets go in `~/.bashrc.local`, which is never committed.
 - `macos/defaults.sh`: macOS settings (`defaults write ...`)
 - `macos/iterm.sh`: iTerm2 global settings, installs the profile
 - `macos/iterm/profile.json`: iTerm2 profile (scrollback, keys, new tab behavior) as a Dynamic Profile

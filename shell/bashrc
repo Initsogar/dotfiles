@@ -1,0 +1,34 @@
+# Interactive bash. Works on macOS and Linux: each block only runs if its tool is installed.
+
+# Homebrew (Apple Silicon or Intel)
+for brew in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+  [ -x "$brew" ] && eval "$("$brew" shellenv bash)" && break
+done
+
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
+
+# History: large, no duplicates, written after every command so tabs share it
+HISTSIZE=50000
+HISTFILESIZE=50000
+HISTCONTROL=ignoreboth:erasedups
+shopt -s histappend checkwinsize
+PROMPT_COMMAND="history -a${PROMPT_COMMAND:+; $PROMPT_COMMAND}"
+
+# Completion
+if [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
+  . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+elif [ -r /usr/share/bash-completion/bash_completion ]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+# Apple's git does not register its completion anywhere bash-completion looks
+git_completion=/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+[ -r "$git_completion" ] && . "$git_completion"
+unset git_completion
+
+# Machine-specific settings and secrets, never committed
+[ -r "$HOME/.bashrc.local" ] && . "$HOME/.bashrc.local"
+
+command -v starship >/dev/null && eval "$(starship init bash)"
