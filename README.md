@@ -12,11 +12,15 @@ cd ~/Workspace/dotfiles
 
 `install.sh` detects the OS and only applies what fits.
 
+The default prompt uses Bash: Piplup colors, a penguin beside your username,
+the directory, Git branch (or commit when detached), and time. The arrow turns
+red after a failed command. To try it in an existing terminal, run `exec bash -l`.
+
 ## Layout
 
 - `install.sh`: entry point
 - `Brewfile`: Homebrew packages, installed with `brew bundle`
-- `shell/bashrc`, `shell/bash_profile`, `shell/inputrc`: bash config, symlinked into `$HOME`. `shell/starship.toml` is the prompt, linked to `~/.config/starship.toml`. Machine-specific settings and secrets go in `~/.bashrc.local`, which is never committed.
+- `shell/bashrc`, `shell/bash_profile`, `shell/inputrc`: bash config and the default prompt, symlinked into `$HOME`. Machine-specific settings and secrets go in `~/.bashrc.local`, which is never committed.
 - `git/ignore`: global gitignore, linked to `~/.config/git/ignore`
 - `macos/defaults.sh`: macOS settings (`defaults write ...`): keyboard, trackpad, Dock, Finder
 - `macos/iterm.sh`: iTerm2 global settings, installs the profile

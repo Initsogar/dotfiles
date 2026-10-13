@@ -58,7 +58,6 @@ echo "==> Linking config files"
 link shell/bashrc .bashrc
 link shell/bash_profile .bash_profile
 link shell/inputrc .inputrc
-link shell/starship.toml .config/starship.toml
 link git/ignore .config/git/ignore
 
 echo "==> Done"

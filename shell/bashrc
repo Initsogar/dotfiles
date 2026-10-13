@@ -34,4 +34,29 @@ command -v fzf >/dev/null && eval "$(fzf --bash)"
 # Machine-specific settings and secrets, never committed
 [ -r "$HOME/.bashrc.local" ] && . "$HOME/.bashrc.local"
 
-command -v starship >/dev/null && eval "$(starship init bash)"
+# Piplup prompt, implemented directly in Bash.
+if [[ $- == *i* ]]; then
+  PROMPT_DIRTRIM=3
+  _piplup_prompt() {
+    local last_status=$? branch='' arrow='\[\e[1;38;2;141;213;199m\]'
+    if command -v git >/dev/null; then
+      branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null) ||
+        branch=$(git rev-parse --short HEAD 2>/dev/null) || branch=''
+    fi
+    # Expand branch data only when Bash displays PS1, so it stays literal.
+    PIPLUP_BRANCH=$branch
+    PS1='\n\[\e[38;2;32;75;117m\]\[\e[48;2;32;75;117;38;2;244;247;232m\]🐧 \u '
+    PS1+='\[\e[48;2;244;207;100;38;2;32;75;117m\]\[\e[38;2;20;43;69m\] \w '
+    if [[ -n $branch ]]; then
+      PS1+='\[\e[48;2;116;185;220;38;2;244;207;100m\]\[\e[38;2;20;43;69m\]  ${PIPLUP_BRANCH} '
+      PS1+='\[\e[48;2;20;43;69;38;2;116;185;220m\]'
+    else
+      PS1+='\[\e[48;2;20;43;69;38;2;244;207;100m\]'
+    fi
+    PS1+='\[\e[38;2;244;247;232m\]  \A \[\e[0;38;2;20;43;69m\]\[\e[0m\]\n'
+    [[ $last_status == 0 ]] || arrow='\[\e[1;38;2;239;128;128m\]'
+    PS1+="${arrow}"'\[\e[0m\] '
+  }
+  # Keep existing hooks and capture the command status before history updates.
+  PROMPT_COMMAND="_piplup_prompt${PROMPT_COMMAND:+; $PROMPT_COMMAND}"
+fi
