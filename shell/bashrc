@@ -28,6 +28,9 @@ git_completion=/Library/Developer/CommandLineTools/usr/share/git-core/git-comple
 [ -r "$git_completion" ] && . "$git_completion"
 unset git_completion
 
+# fzf: Ctrl+R searches history, Ctrl+T finds files, Alt+C jumps to a folder
+command -v fzf >/dev/null && eval "$(fzf --bash)"
+
 # Machine-specific settings and secrets, never committed
 [ -r "$HOME/.bashrc.local" ] && . "$HOME/.bashrc.local"
 

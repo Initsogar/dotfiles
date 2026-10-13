@@ -1,0 +1,14 @@
+# Readline: how bash edits the line you type. Makes Tab and Up/Down behave like zsh.
+$include /etc/inputrc
+
+# Tab: case-insensitive, list matches on the first press, then cycle through them
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set menu-complete-display-prefix on
+set colored-stats on
+TAB: menu-complete
+"\e[Z": menu-complete-backward
+
+# Up/Down: search history for commands starting with what is already typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward
