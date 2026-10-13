@@ -4,9 +4,114 @@
       "AWDS Pane Option": "No",
       "AWDS Tab Option": "Recycle",
       "AWDS Window Option": "No",
+      "Ansi 0 Color": {
+        "Blue Component": 0,
+        "Green Component": 0,
+        "Red Component": 0
+      },
+      "Ansi 1 Color": {
+        "Blue Component": 0,
+        "Green Component": 0,
+        "Red Component": 0.7333333492279053
+      },
+      "Ansi 10 Color": {
+        "Blue Component": 0.3333333432674408,
+        "Green Component": 1,
+        "Red Component": 0.3333333432674408
+      },
+      "Ansi 11 Color": {
+        "Blue Component": 0.3333333432674408,
+        "Green Component": 1,
+        "Red Component": 1
+      },
+      "Ansi 12 Color": {
+        "Blue Component": 1,
+        "Green Component": 0.3333333432674408,
+        "Red Component": 0.3333333432674408
+      },
+      "Ansi 13 Color": {
+        "Blue Component": 1,
+        "Green Component": 0.3333333432674408,
+        "Red Component": 1
+      },
+      "Ansi 14 Color": {
+        "Blue Component": 1,
+        "Green Component": 1,
+        "Red Component": 0.3333333432674408
+      },
+      "Ansi 15 Color": {
+        "Blue Component": 1,
+        "Green Component": 1,
+        "Red Component": 1
+      },
+      "Ansi 2 Color": {
+        "Blue Component": 0,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0
+      },
+      "Ansi 3 Color": {
+        "Blue Component": 0,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0.7333333492279053
+      },
+      "Ansi 4 Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0,
+        "Red Component": 0
+      },
+      "Ansi 5 Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0,
+        "Red Component": 0.7333333492279053
+      },
+      "Ansi 6 Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0
+      },
+      "Ansi 7 Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0.7333333492279053
+      },
+      "Ansi 8 Color": {
+        "Blue Component": 0.3333333432674408,
+        "Green Component": 0.3333333432674408,
+        "Red Component": 0.3333333432674408
+      },
+      "Ansi 9 Color": {
+        "Blue Component": 0.3333333432674408,
+        "Green Component": 0.3333333432674408,
+        "Red Component": 1
+      },
+      "Background Color": {
+        "Blue Component": 0,
+        "Green Component": 0,
+        "Red Component": 0
+      },
+      "Bold Color": {
+        "Blue Component": 1,
+        "Green Component": 1,
+        "Red Component": 1
+      },
+      "Cursor Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0.7333333492279053
+      },
+      "Cursor Text Color": {
+        "Blue Component": 1,
+        "Green Component": 1,
+        "Red Component": 1
+      },
       "Custom Directory": "Advanced",
       "Custom Locale": "en_US.UTF-8",
       "Draw Powerline Glyphs": true,
+      "Foreground Color": {
+        "Blue Component": 0.7333333492279053,
+        "Green Component": 0.7333333492279053,
+        "Red Component": 0.7333333492279053
+      },
       "Guid": "6E9E290F-9895-40D6-9C29-8877B7AE777C",
       "Jobs to Ignore": [
         "rlogin",
@@ -258,12 +363,26 @@
       },
       "Minimum Contrast": 0,
       "Name": "Dotfiles",
+      "Non Ascii Font": "FiraCodeNFM-Reg 12",
+      "Normal Font": "Menlo-Regular 11",
       "Only The Default BG Color Uses Transparency": true,
       "Prompt Before Closing 2": false,
       "Scrollback Lines": 0,
+      "Selected Text Color": {
+        "Blue Component": 0,
+        "Green Component": 0,
+        "Red Component": 0
+      },
+      "Selection Color": {
+        "Blue Component": 1,
+        "Green Component": 0.8353000283241272,
+        "Red Component": 0.7098000049591064
+      },
       "Set Local Environment Vars": 2,
       "Terminal Type": "xterm-256color",
-      "Unlimited Scrollback": true
+      "Unlimited Scrollback": true,
+      "Use Non-ASCII Font": true,
+      "Use Separate Colors for Light and Dark Mode": false
     }
   ]
 }
