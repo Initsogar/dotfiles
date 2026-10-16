@@ -1,0 +1,78 @@
+" ==========================================
+" General
+" ==========================================
+
+set nocompatible
+set hidden
+set history=1000
+set backspace=indent,eol,start
+
+" ==========================================
+" Indentation
+" ==========================================
+
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" ==========================================
+" Search
+" ==========================================
+
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" ==========================================
+" Interface
+" ==========================================
+
+set number
+set ruler
+set showcmd
+set showmode
+set showmatch
+set laststatus=2
+set scrolloff=3
+set linebreak
+
+" Mouse and cursor
+set mouse=a
+set cursorline
+set nostartofline
+
+" Terminal behavior
+set noerrorbells
+set title
+
+" Show invisible characters (except line endings)
+set listchars=tab:▸\ ,trail:·,nbsp:_
+set list
+
+" ==========================================
+" Command completion
+" ==========================================
+
+set wildmenu
+set wildmode=list:longest,full
+
+" ==========================================
+" Files
+" ==========================================
+
+set nomodeline
+set nofoldenable
+set noswapfile
+
+" ==========================================
+" Syntax and colors
+" ==========================================
+
+syntax on
+filetype plugin indent on
+
+set background=dark
+colorscheme desert
