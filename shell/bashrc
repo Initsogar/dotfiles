@@ -38,14 +38,16 @@ command -v fzf >/dev/null && eval "$(fzf --bash)"
 if [[ $- == *i* ]]; then
   PROMPT_DIRTRIM=3
   _piplup_prompt() {
-    local last_status=$? branch='' arrow='\[\e[1;38;2;141;213;199m\]'
+    local last_status=$? branch='' arrow='\[\e[1;38;2;141;213;199m\]' who='\u'
+    # Over SSH, show the host too so remote shells stand out.
+    [[ -n $SSH_CONNECTION ]] && who='\u@\h'
     if command -v git >/dev/null; then
       branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null) ||
         branch=$(git rev-parse --short HEAD 2>/dev/null) || branch=''
     fi
     # Expand branch data only when Bash displays PS1, so it stays literal.
     PIPLUP_BRANCH=$branch
-    PS1='\n\[\e[38;2;32;75;117m\]\[\e[48;2;32;75;117;38;2;244;247;232m\]🐧 \u '
+    PS1='\n\[\e[38;2;32;75;117m\]\[\e[48;2;32;75;117;38;2;244;247;232m\]🐧 '"$who"' '
     PS1+='\[\e[48;2;244;207;100;38;2;32;75;117m\]\[\e[38;2;20;43;69m\] \w '
     if [[ -n $branch ]]; then
       PS1+='\[\e[48;2;116;185;220;38;2;244;207;100m\]\[\e[38;2;20;43;69m\]  ${PIPLUP_BRANCH} '
